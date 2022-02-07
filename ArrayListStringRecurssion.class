@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+    }
+
+    public static ArrayList<String> gss(String str) {
+        if(){
+
+        }
+        char ch = str.charAt(0);
+        string ros = str.substring(1);
+
+        ArrayList<String> recAns = gss(ros);
+        ArrayList<String> myAns = new ArrayList<>();
+
+        for(String x : recAns){
+            myAns.add(x);
+        }
+        for(String x : recAns){
+            myAns.add(ch + x);
+        }
+        
+    }
+
+}
