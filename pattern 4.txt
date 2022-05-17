@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        
+        int n=scn.nextInt();
+        int star=n;
+        int space=0;
+        for(int row=1;row<=n;row++){
+            for(int pos=0;pos<space;pos++){
+                System.out.print("\t");
+            }
+            for(int cos=1;cos<=star;cos++){
+                System.out.print("*\t");
+            }
+            star--;
+            space++;
+            System.out.println();
+        }
+
+    }
+}

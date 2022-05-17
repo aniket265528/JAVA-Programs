@@ -1,0 +1,48 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        int n=scn.nextInt();
+        int space1=n/2;
+        int space2=n/2;
+        int start=1;
+        for(int row=1;row<=n/2+1;row++){
+            for(int i=0;i<space1;i++){
+                System.out.print("\t");
+            }
+            for(int j=1;j<=start;j++){
+                System.out.print("*\t");
+            }
+            for(int k=1;k<=space2;k++){
+                System.out.print("\t");
+            }
+            space1--;
+            space2--;
+            start=start+2;
+            System.out.println();
+        }
+        
+        int space3=1;
+        int space4=1;
+        int start1=n-2;
+
+        for(int row=1;row<=n/2;row++){
+            for(int i=0;i<space3;i++){
+                System.out.print("\t");
+            }
+            for(int j=1;j<=start1;j++){
+                System.out.print("*\t");
+            }
+            for(int k=1;k<=space4;k++){
+                System.out.print("\t");
+            }
+            space3++;
+            space4++;
+            start1=start1-2;
+            System.out.println();
+        }
+    }
+}

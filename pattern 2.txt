@@ -4,13 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
+
         int n= scn.nextInt();
-        for(int i=1;i<=n;i++)
-         {
-             for(int j=0;j<i;j++){
-               System.out.print("*      ");              
-               }
-             System.out.print("\n");
-        } 
-             }
-}
+       int space=0;
+       int star=n;
+       for(int row=1;row<=n;row++){
+           for(int cos=1;cos<=star;cos++){
+                System.out.print("*\t");
+           }
+               for(int cst=0;cst<space;cst++){
+                   System.out.print("\t");
+               
+
+           }
+           space++;
+           star--;
+           System.out.println();
+       }
+    }

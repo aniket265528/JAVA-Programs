@@ -1,0 +1,71 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        int n=scn.nextInt();
+        int star1=1;
+        int star2=1;
+        int space1=n-2;
+        int space2=1;
+        for(int row=1;row<=n/2;row++){
+            for(int x=1;x<space2;x++){
+                System.out.print("\t");
+                
+            }
+            for(int i=1;i<=star1;i++){
+                System.out.print("*\t");
+            }
+            for(int j=1;j<=space1;j++){
+                System.out.print("\t");
+            }
+            for(int k=1;k<=star2;k++){
+                System.out.print("*\t");
+            }
+            space1=space1-2;
+            space2++;
+            System.out.println();
+        }
+             for(int x=1;x<space2;x++){
+                System.out.print("\t");
+                
+            }
+            for(int i=1;i<=star1;i++){
+                System.out.print("*\t");
+            }
+            for(int j=1;j<=space1;j++){
+                System.out.print("\t");
+               
+               
+                 
+            }
+             System.out.println();
+            int space3=n/2-1;
+            int star3=1;
+            int star4=1;
+            int space4=(n+1)/3-1;
+            for(int row=1;row<=n/2;row++){
+            for(int x=1;x<=space3;x++){
+                System.out.print("\t");
+                
+            }
+            for(int i=1;i<=star3;i++){
+                System.out.print("*\t");
+            }
+            for(int j=1;j<=space4;j++){
+                System.out.print("\t");
+            }
+            for(int k=1;k<=star4;k++){
+                System.out.print("*\t");
+            }
+            space3--;
+            space4=space4+2;
+            System.out.println();
+            }
+            
+        
+
+    }
+}
